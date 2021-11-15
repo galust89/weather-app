@@ -1,5 +1,4 @@
 function Card({ day }) {
-    console.log(day);
     let dt = new Date(day.dt * 1000);
     let sr = new Date(day.sunrise * 1000).toTimeString();
     let ss = new Date(day.sunset * 1000).toTimeString();

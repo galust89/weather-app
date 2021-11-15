@@ -14,9 +14,7 @@ function App() {
         if (lat && lng) {
             dispatch(getWeather({ lat, lng }));
         }
-    }, [location.lat, location.lng]);
-
-    console.log(location);
+    }, [location, dispatch]);
 
     if (!location.loaded) {
         return null;
